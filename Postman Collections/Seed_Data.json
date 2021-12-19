@@ -356,7 +356,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"AccountFRN\":\"{{Account FRN}}\",\r\n    \"Policy\":\r\n    {\r\n        \"FRN\":\"\",\r\n        \"PolicyName\":\"\",\r\n        \"TypeName\":\"\",\r\n        \"AccountId\":\"\",\r\n        \"Statements\":\r\n        [\r\n            {\r\n                \"PolicyId\":\"\",\r\n                \"Type\":\"\",\r\n                \"AccountId\":\"\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"account:getaccount\",\"Change\":1},\r\n                    {\"Value\":\"account:updateaccount\",\"Change\":1},\r\n                    {\"Value\":\"account:adduserattribute\",\"Change\":1}\r\n\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    {{Account FRN}}\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n\r\n}",
+          "raw": "{\r\n    \"AccountFRN\":\"{{Account FRN}}\",\r\n    \"Policy\":\r\n    {\r\n        \"FRN\":\"\",\r\n        \"PolicyName\":\"\",\r\n        \"TypeName\":\"\",\r\n        \"AccountId\":\"\",\r\n        \"Statements\":\r\n        [\r\n            {\r\n                \"PolicyId\":\"\",\r\n                \"Type\":\"STACT\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"account:getaccount\",\"Change\":1},\r\n                    {\"Value\":\"account:updateaccount\",\"Change\":1},\r\n                    {\"Value\":\"account:adduserattribute\",\"Change\":1},\r\n                    {\"Value\":\"account:deleteuserattribute\",\"Change\":1},\r\n                    {\"Value\":\"account:listusers\",\"Change\":1},\r\n                    {\"Value\":\"account:listapps\",\"Change\":1},\r\n                    {\"Value\":\"\"}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    {{Account FRN}}\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -450,107 +450,107 @@
   ],
   "variable": [
     {
-      "id": "be06df1e-8606-4152-89e9-622d2b98b262",
+      "id": "b891f1fc-62fc-4ec3-a611-3bc77d3f8035",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "106be36e-23a7-4839-b99e-ff82e2706bf1",
+      "id": "a6956944-765e-4cee-8721-35d4e8e54717",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "b3e97595-4171-4a7a-97ff-e60e72e7a0b1",
+      "id": "f1d5212e-ca14-449d-9647-b2635932634d",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "2fe5516a-69b0-4543-a1ba-25352fa0a488",
+      "id": "24d5626c-eb2d-4c40-a2ae-83f8efe56874",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "90ec863d-07cc-47ed-8200-2087ed22ea25",
+      "id": "9c3f1e37-9c3a-4315-8fca-ee3b2bb9f6f8",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "b880813e-a59e-421a-8254-f62434c4c001",
+      "id": "39fcd61f-bed1-4d4a-ba0c-4ae0b94876e9",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "262bcd0c-6e75-42e2-8c95-b94ef4cf743e",
+      "id": "4a8e1c1d-885a-49c2-aabe-6b819c2f5b7c",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "8f69d9b4-7a39-40c1-8106-1b2f7d405e95",
+      "id": "24ecacd5-9e18-49de-85be-06d5ae1b76ac",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "c0300326-ce0a-4560-94f9-66d87b6dc0ef",
+      "id": "f808a2e6-9ae3-47f5-b787-087db18f8e61",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "f7c58fb2-91b0-46d1-b6e5-69b730fba2d5",
+      "id": "05d79827-95b4-4a45-ac6d-f28425ad7403",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     },
     {
-      "id": "fa2b9f9d-58c8-4489-96ac-ba527676aa66",
+      "id": "4c82fe8b-5561-48d7-adec-2dc6c969bfb9",
       "key": "Owner Id",
       "value": "5dc0e5fd3fef576d4983bdad"
     },
     {
-      "id": "2efb5757-b342-44cb-84e6-4ecc445ba499",
+      "id": "ba039209-6360-4ecb-8aca-1a82e5e2e4c7",
       "key": "Owner FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "0d560b1d-25e5-4ed2-86bd-e3284b0e78ba",
+      "id": "907096c6-7eaf-4621-8bf7-cc3651712df8",
       "key": "Admin Id",
       "value": "5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "e6adc497-50fb-4d2a-926c-70c20860a043",
+      "id": "ffccd02f-1b69-442f-9d68-5e79278edffe",
       "key": "Admin FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "f45baea2-785c-4784-a17f-70a7685a3aec",
+      "id": "236ba9ed-5605-4b6d-acf4-c0d9e540cc69",
       "key": "CEO Id",
       "value": "5e52cd6d9747f8256de9fdf9"
     },
     {
-      "id": "3cde21e4-ca4b-4794-b7a1-fcf8c510da29",
+      "id": "ba1ba308-d389-4f39-b17e-88e183e989e3",
       "key": "President Id",
       "value": "5e52cd809747f8256de9fdfa"
     },
     {
-      "id": "6af2c2bc-ee57-4d27-a670-0644b53c81c2",
+      "id": "d5599465-0cb3-47f1-9b21-f7f777d2ecca",
       "key": "VP1 Id",
       "value": "5e52cd909747f8256de9fdfb"
     },
     {
-      "id": "2e4ab82d-a674-4949-9c8c-baec48d6914c",
+      "id": "dea5d822-2af2-453d-a0e3-eac0cfa62b12",
       "key": "VP2 Id",
       "value": "5e52cda09747f8256de9fdfc"
     },
     {
-      "id": "e8cedd6e-b865-41d4-8e28-5b066b21b2b4",
+      "id": "ee766817-0bbb-4e34-90e0-ca6f302e1bc4",
       "key": "VP3 Id",
       "value": "60c812e4edebab30cbead5e4"
     },
     {
-      "id": "3d5b3a5b-f201-4de5-9f5e-95a19b4f1ed9",
+      "id": "ba7ff4ec-2d1b-470d-9523-6355f216c1c2",
       "key": "Director1 Id",
       "value": "5e52cdb39747f8256de9fdfd"
     },
     {
-      "id": "88242090-3914-47f9-8340-994897cc0af5",
+      "id": "ce8c322b-0267-4c9e-bae6-bee26eadb901",
       "key": "Director2 Id",
       "value": "5e52cdc99747f8256de9fdfe"
     }
