@@ -4,5 +4,79 @@
     "name": "Seed Data",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
-  "item": []
+  "item": [],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "b59c4899-ffcd-475a-888d-0feb90f95a3b",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "f1b47e41-2029-42b7-babb-fd98a1907879",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "4fd471ac-d745-4044-b83c-566152acc191",
+      "key": "Account Id",
+      "value": "5d871ec9fee167616376f4e4"
+    },
+    {
+      "id": "dc5a669b-e5d4-44fc-970b-4e455f068aaa",
+      "key": "Account FRN",
+      "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
+    },
+    {
+      "id": "cb8bd063-0201-4a3e-9b2a-6bb7d164aa6b",
+      "key": "Account Name",
+      "value": "TestAccountOne"
+    },
+    {
+      "id": "a1e97737-91f6-458e-a4ef-ffd84b21f158",
+      "key": "Cloud",
+      "value": "aws"
+    },
+    {
+      "id": "913715a5-fe38-416e-bc50-33c0f0ba8ee0",
+      "key": "Region",
+      "value": "pdx"
+    },
+    {
+      "id": "bcf3924c-de87-4e11-a5fb-3e5a65c14a4f",
+      "key": "Account All",
+      "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
+    },
+    {
+      "id": "48055c12-cdd4-45db-88b6-aaab3117f311",
+      "key": "All Actor FRN",
+      "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
+    },
+    {
+      "id": "3da58f3f-511a-4ba0-8e56-dd8a8d9949fd",
+      "key": "All App FRN",
+      "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
+    },
+    {
+      "id": "0e9d9d64-10fe-43cb-ae59-704ad3731839",
+      "key": "All Model Variants",
+      "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
+    },
+    {
+      "id": "e52def2a-a977-47b9-981a-349838421886",
+      "key": "All Variant Records",
+      "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
+    }
+  ]
 }
