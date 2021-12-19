@@ -12,9 +12,18 @@
         "disableBodyPruning": true
       },
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
-        "url": null
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"AccountId\":{{Account Id}},\r\n    \"AccountCloud\":{{Account Cloud}}\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{Host IP Address}}/home/createaccount"
       },
       "response": []
     }
@@ -43,52 +52,52 @@
   ],
   "variable": [
     {
-      "id": "bf481d6d-1e7a-472e-a625-fbf9656d85c2",
+      "id": "8d6e6b70-5ca7-41b6-8297-a38cb7682966",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "7955cdf8-234d-4b32-8a04-198e9fe06a2a",
+      "id": "634b3473-0b59-438b-beba-2a9d8841571f",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "a92ab12e-1d9f-4b3f-881d-da8d6baae97e",
+      "id": "c0ae54f8-8c5b-4c66-a61d-7ad4526d5270",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "293976b2-94d0-49c8-86b3-4d7e884b828f",
+      "id": "4eded155-7513-40cf-ac0d-d7ba0ac26dda",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "494df5fc-d72e-4262-9bdd-17416b7906c0",
+      "id": "84b756b7-ea7c-4bc7-81ce-82db35094eec",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "028d148f-9fbe-459d-a618-314c13659b12",
+      "id": "0cbb8a8c-3f03-4da5-abb9-f16b5a71f22a",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "80333b60-1aef-406d-8493-c752b1428b5a",
+      "id": "c468e5a9-717c-406b-9357-58a5228b4e02",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "e2290d7f-851d-4566-a7a9-781ebf57ca48",
+      "id": "102b24ad-49f6-49d9-ad35-d00be2a58ebb",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "ef00e60b-8cab-4ba0-a203-275bef8d68ca",
+      "id": "b1a92806-be4e-4bc3-b5f2-06ef0bc5c44d",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "4a3bcb2c-4f89-4c46-9f72-78133ce1d853",
+      "id": "6010b711-52d5-43cf-babd-e352ebcf3569",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     }
