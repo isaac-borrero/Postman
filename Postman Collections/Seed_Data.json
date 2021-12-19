@@ -106,7 +106,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "b55171d9-fe04-45ba-b5b3-3c1a72dc2604",
+        "id": "72e3eca6-c936-4465-9fa1-9364e2dca465",
         "type": "text/javascript",
         "exec": [
           ""
@@ -116,7 +116,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "261397b4-bc32-4910-a421-50e4d5b3f0b9",
+        "id": "b39b5c4c-6998-4b8e-b250-9d9d3296aec4",
         "type": "text/javascript",
         "exec": [
           ""
@@ -126,74 +126,84 @@
   ],
   "variable": [
     {
-      "id": "db18f91e-83e7-43ef-b672-4efd9e79f739",
+      "id": "0abd1d40-8383-4475-9a8b-ec7dcdd55ce8",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "bc751801-91e8-4e11-81ca-14d69e498094",
+      "id": "9341aa5d-b188-4bd0-af43-3ae22d92b3e4",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "133037ed-27b0-474d-bfda-ecf7d1872ebb",
+      "id": "f8b4ba29-aea5-4b0e-8dee-91f6db25578c",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "d8d2ae30-1c9d-4381-9c43-8b3aacc012a1",
+      "id": "18197612-07fb-4066-b571-5f4bd97c04e1",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "df438c55-1524-4662-b06f-82ab6a2aeac8",
+      "id": "a1a790c6-bc27-49c8-9f20-7e7b2f445e0c",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "1be0f80d-db76-475e-83b7-46022154d048",
+      "id": "70608738-16a8-4e40-a431-1bef8ffdf1e2",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "1407414c-6344-4d2b-91ae-b966f0b19b85",
+      "id": "af823cec-0489-4968-9a5c-8a7e2c622c95",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "b73b6fde-b6ca-4f30-9305-7dbb27111c4e",
+      "id": "53759e4c-e425-47ca-b326-ecd96c63f993",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "cafcfb51-d160-4654-9dcf-09f6d5b02f11",
+      "id": "824390bd-bd99-4543-a7d1-5f4e1c61a5e0",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "ed09c3fd-ed81-42c5-92e6-92f00577036c",
+      "id": "61903094-fb30-4bb6-b71d-9d842fc50757",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     },
     {
-      "id": "f5fe1a85-21db-4031-8f20-1fc752a29248",
+      "id": "5f157ef4-dd0a-486a-be99-f67277465369",
       "key": "Owner Id",
       "value": "5dc0e5fd3fef576d4983bdad"
     },
     {
-      "id": "8a85edb1-f54b-4b29-b4a5-e9973eea6a78",
+      "id": "953fdac8-04bc-4465-80dc-5e6c20e6bc64",
       "key": "Owner FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "0dfba117-b6db-44a8-b334-8bf44a4ac775",
+      "id": "8721ebf1-aaa8-4eb9-91fc-a4031464715f",
       "key": "Admin Id",
       "value": "5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "20068eb6-d005-40e3-968f-1995e05e1f6b",
+      "id": "74c1fda2-1713-4dd7-8ab9-b3acc51067c9",
       "key": "Admin FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
+    },
+    {
+      "id": "be24df8f-60f2-40ba-8598-7f25a39e7448",
+      "key": "CEO Id",
+      "value": "5e52cd6d9747f8256de9fdf9"
+    },
+    {
+      "id": "1b072e40-db5d-4ec3-8b6b-de6a96191bd6",
+      "key": "CEO FRN",
+      "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52cd6d9747f8256de9fdf9"
     }
   ]
 }
