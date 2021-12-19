@@ -63,6 +63,43 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "CreateUser - Admin Copy",
+      "id": "5cfaaebd-9639-4f65-92dc-e765688c4ae7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Id\":\"{{Admin Id}}\",\r\n    \"AccountFRN\":\"{{Admin FRN}}\",\r\n    \"Email\":\"test.admin@firestar.io\",\r\n    \"FirstName\":\"Test\",\r\n    \"LastName\":\"Admin\",\r\n    \"Password\":\"BadPassword\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{Host IP}}/account/createuser?FRN=frn:account:aws:pdx:5d871ec9fee167616376f4e4",
+          "host": [
+            "{{Host IP}}"
+          ],
+          "path": [
+            "account",
+            "createuser"
+          ],
+          "query": [
+            {
+              "key": "FRN",
+              "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
@@ -89,72 +126,72 @@
   ],
   "variable": [
     {
-      "id": "be9cf4f6-d6f9-4344-b3a9-fd068bdbe573",
+      "id": "333b2264-fc84-4812-967b-488e23f0277d",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "3a773f18-241f-4348-9dd7-1f8dd5f9c77c",
+      "id": "1408ff07-4bf7-45d8-b2c8-f24702a6beca",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "8e85611f-12a4-4968-bcb3-cd7447323f90",
+      "id": "90216e1f-778f-4be9-9dc3-b2ee854ff3be",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "7c20da5e-0c39-46e5-8c34-c33caeb530c6",
+      "id": "9ac45ef7-1d8b-4d84-b6d0-1a33db53db05",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "031839c1-9076-4302-bcf4-68c1d1ac605f",
+      "id": "c6404448-02dc-4028-bc32-a48e3d77da3b",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "cbdc3361-d3ec-411e-bcfc-13738ddbf316",
+      "id": "dc47e320-10ac-418c-ac3a-494325907a3b",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "21df436c-aca4-4ee0-ace1-9d2eafb9b76c",
+      "id": "a685dfb4-cac4-4920-9ade-2678f415ee43",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "0413bcbe-4c73-4c1b-9b7e-9f7f030b27aa",
+      "id": "a682762a-35df-4ebe-b1b0-e57f619d5282",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "2a097ca4-b841-4954-b219-7eabd3de1f19",
+      "id": "9b4d61e9-6034-4777-83e7-7b430454a917",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "ac5fa177-95bc-44de-a8cb-448cc43a3b40",
+      "id": "6f99c0f2-499d-416c-adac-17ad2add7cf4",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     },
     {
-      "id": "eaf21301-2fa6-4785-b0a6-5cfcf935da01",
+      "id": "ceb6d952-1f04-47b8-9ed9-9c4086518547",
       "key": "Owner Id",
       "value": "5dc0e5fd3fef576d4983bdad"
     },
     {
-      "id": "e54b86af-70c7-442e-8cbc-442db07c79ec",
+      "id": "3fe200cf-7b7f-4f67-b069-17d6dcf05fd3",
       "key": "Owner FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "f339edc7-ea2b-40f7-99fe-d72fd41e7f36",
+      "id": "75d83a8e-2a4f-4b1d-8f5e-f29c3ca218e6",
       "key": "Admin Id",
       "value": "5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "86dc9159-830e-4fdf-a943-2e8901ad6dbf",
+      "id": "ac3be0fd-3e5b-4b9a-b1ad-1bf768e36194",
       "key": "Admin FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     }
