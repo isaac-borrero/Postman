@@ -174,6 +174,43 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "CreateUser - VP1 Copy",
+      "id": "e42e6889-69cd-4d03-928a-14f430b6c779",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Id\":\"{{VP1 Id}}\",\r\n    \"AccountFRN\":\"{{VP1 FRN}}\",\r\n    \"Email\":\"test.vp1@firestar.io\",\r\n    \"FirstName\":\"Test\",\r\n    \"LastName\":\"VP1\",\r\n    \"Password\":\"BadPassword\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{Host IP}}/account/createuser?FRN={{Account FRN}}",
+          "host": [
+            "{{Host IP}}"
+          ],
+          "path": [
+            "account",
+            "createuser"
+          ],
+          "query": [
+            {
+              "key": "FRN",
+              "value": "{{Account FRN}}"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
@@ -200,132 +237,132 @@
   ],
   "variable": [
     {
-      "id": "f86b56d1-2ddc-4c2b-8d29-2401b8e6690a",
+      "id": "c1fa5d0b-3e9c-435c-8bff-e449ed7dbbe0",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "e633544e-ace8-4e9c-ae88-84dd5b709fb5",
+      "id": "4956db96-df97-4079-bd08-e0fe61525e59",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "15175311-8991-4dc7-a31f-3258dbd5b2f6",
+      "id": "e00ec78d-f7c7-44f8-9894-edac07142c7e",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "62f9d5c4-cb7e-4d85-b885-ae8cfcaffc3c",
+      "id": "7a883084-7792-4ab5-a934-59147a773483",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "2601e289-8b26-4a8c-90b1-5dbb79f05cc6",
+      "id": "f7aaaf8a-8fde-404e-b18e-51aa39e99c50",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "4861dcb2-2bf7-4603-8739-82f351a5077f",
+      "id": "36747e24-5c27-4a51-9bd0-f410a5f7bba2",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "eadf1a25-6bc1-4f5e-9bb8-7f58d5ffcec6",
+      "id": "270c75a0-6eb5-4cce-936b-88c29a2bbf3a",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "3a2ff892-af39-475a-b9e7-a8ee5750d9d0",
+      "id": "ea15424a-031d-4d83-9dd0-a49f0cd5e004",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "682db917-69b3-4b42-aa00-4070a6c7d6ae",
+      "id": "f30690eb-197f-45b9-97f4-81c6b3cdc240",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "0f8e1358-0a92-4f87-bd51-6f7260704f54",
+      "id": "69f8436d-a72f-47bf-82cb-355ca560b8df",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     },
     {
-      "id": "378a74df-1540-42d9-94f3-44b8413bf612",
+      "id": "a21a2f2e-2b93-4120-89c2-b80d8e985fe2",
       "key": "Owner Id",
       "value": "5dc0e5fd3fef576d4983bdad"
     },
     {
-      "id": "f0cba53c-4a59-4d4e-9872-b30921aaf60a",
+      "id": "2ab2e7f5-e418-406a-9575-ec8c4679da06",
       "key": "Owner FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "4dd94f59-63f8-4d90-b55c-efd8dd1687f3",
+      "id": "a6231dca-31c1-45e8-a1ec-8b2211f2e820",
       "key": "Admin Id",
       "value": "5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "958ab310-9804-43c0-85a7-7dab97b0c11c",
+      "id": "9ec9f5ef-b97d-4036-882f-7a5e810920ea",
       "key": "Admin FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "94eb50a1-6a0a-473a-922a-b4db7bdc7954",
+      "id": "484f6ecd-02ac-41d5-a29e-c1745f522521",
       "key": "CEO Id",
       "value": "5e52cd6d9747f8256de9fdf9"
     },
     {
-      "id": "30024f14-8f40-4f0c-b28d-9453a4f2db6a",
+      "id": "05cc48ee-f5ab-4336-9e1d-289c97509e3f",
       "key": "CEO FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52cd6d9747f8256de9fdf9"
     },
     {
-      "id": "c3f4bc16-5da9-4e09-a89b-117ab5f848fe",
+      "id": "5ea01650-a1b7-4fd6-9968-5e0406fc8bae",
       "key": "President Id",
       "value": "5e52cd809747f8256de9fdfa"
     },
     {
-      "id": "6daf1d6c-c70d-4685-b896-648f80823596",
+      "id": "a5ef5210-1a92-4434-8706-8f5abe515a17",
       "key": "President FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52cd809747f8256de9fdfa"
     },
     {
-      "id": "1e62bd2c-30bc-49ba-83c3-4a188e299bca",
+      "id": "12a769ed-5056-4210-bd11-c8ae69461e6f",
       "key": "VP1 Id",
       "value": "5e52cd909747f8256de9fdfb"
     },
     {
-      "id": "4cab750d-8986-42b5-b4ef-c6f9345fb393",
+      "id": "a22d0dc5-5590-472a-b27e-ee75a1b440fd",
       "key": "VP1 FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52cd909747f8256de9fdfb"
     },
     {
-      "id": "556df251-91c0-4a24-bf32-beef3bb453bf",
+      "id": "182255ed-ee2b-4d40-aa75-4da5a820b427",
       "key": "VP2 Id",
       "value": "5e52cda09747f8256de9fdfc"
     },
     {
-      "id": "0faa8c30-c69d-4d35-82c9-c50eeba65212",
+      "id": "0ba6f0bc-6d7a-4f0f-a22c-fbe9935474c5",
       "key": "VP2 FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52cda09747f8256de9fdfc"
     },
     {
-      "id": "2bcd1d19-b647-448e-ba89-b9dff5fa4be1",
+      "id": "b9e5ca33-e3e5-45b7-ac28-5616e8301a96",
       "key": "VP3 Id",
       "value": "60c812e4edebab30cbead5e4"
     },
     {
-      "id": "34e061c8-932d-42fa-bbaa-80fc55aee730",
+      "id": "83de55b9-ad56-451a-b404-e82dea3e7620",
       "key": "VP3 FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52cda09747f8256de9fdfc"
     },
     {
-      "id": "adc33195-fe51-4cd8-a6f4-739c64db9b24",
+      "id": "c2bec971-1136-4adc-aa47-05e8c8580b1c",
       "key": "Director1 Id",
       "value": "5e52cdb39747f8256de9fdfd"
     },
     {
-      "id": "be1d761c-ec17-4da3-b3c4-6f5becc3a971",
+      "id": "43c0d626-f0d6-47ed-98b2-aaa857a709c5",
       "key": "Director1 FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52cdb39747f8256de9fdfd"
     }
