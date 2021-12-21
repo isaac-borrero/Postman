@@ -44,6 +44,43 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Create App - Test App Copy",
+          "id": "5de24b23-84bf-461a-873c-d435405b0223",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Id\":\"{{App 1 Id}}\",\r\n    \"AccountFRN\":\"frn:app:{{Cloud}}:{{Region}}:{{Account Id}}:{{App 1 Id}}\",\r\n    \"Name\":\"Test App\",\r\n    \"Title\":\"Testing Application\",\r\n    \"Description\":\"This App is meant to be used for development of the UI and full integration testing.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{Host IP Address}}/account/createapp?FRN={{Account FRN}}",
+              "host": [
+                "{{Host IP Address}}"
+              ],
+              "path": [
+                "account",
+                "createapp"
+              ],
+              "query": [
+                {
+                  "key": "FRN",
+                  "value": "{{Account FRN}}"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "abf55849-25f0-4a24-ac00-724e90013d07"
@@ -456,122 +493,122 @@
   ],
   "variable": [
     {
-      "id": "2326c578-3e9c-4d10-b11a-b034e686406f",
+      "id": "11a32484-bdd0-45e8-b03c-468061f5c66f",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "1571bcdd-36ba-4168-872b-c7da4838fcc1",
+      "id": "2d973545-d0c9-4d76-9a31-c10c2cbb5258",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "20bd75b6-8d16-4d60-b270-aa7f11633211",
+      "id": "1f99d0e9-65cc-4909-a628-24c58ff841a7",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "f9467807-2b9c-495f-ae50-38fca90a3d30",
+      "id": "42099fc2-da90-45b9-a034-ab80fd4d01a7",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "70dd6ec9-b79a-4740-a58a-799333dadb31",
+      "id": "8a7df3cb-8e75-415d-8e49-ae4e6d192663",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "9c7c963e-ecf1-4d6a-8701-21fb8d84abef",
+      "id": "7eda8ae2-613e-479c-b82e-04616bc40c07",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "5c684498-fe94-4101-8363-92ab8f73c2eb",
+      "id": "525a0240-17dc-42a5-9ce1-2aa423603353",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "3de3d0af-720c-4881-ae15-e90bf928b2dc",
+      "id": "11b0b530-9f01-47a7-8f82-6f73601fac94",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "b2440a43-7c09-4444-931e-5c7cf944e986",
+      "id": "9587b92b-cb7a-4762-92b0-168e9f931db8",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "e28575eb-ebb1-4f01-adaf-b9a6041a2394",
+      "id": "218b689f-72c1-43bb-b469-97ed4ac5e61d",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     },
     {
-      "id": "d7b00090-3b18-4a38-9e6c-56dc2587e301",
+      "id": "b629c7b1-c0e0-4363-b2e2-a5dff829d7ee",
       "key": "Owner Id",
       "value": "5dc0e5fd3fef576d4983bdad"
     },
     {
-      "id": "842b1c2e-0c58-4e6e-bc3b-c0d9366c9354",
+      "id": "232b4baa-c520-47c1-bec1-b4bb79fc3f92",
       "key": "Owner FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "fe5c4161-50b3-4917-8abd-d5687597e7c7",
+      "id": "e50364e1-79a1-4e15-93e9-db790a9e0b87",
       "key": "Admin Id",
       "value": "5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "f12fdd98-35ea-4763-aa58-0dea0fb08c88",
+      "id": "f5719c76-0eab-4c2c-8307-420b15d85dd7",
       "key": "Admin FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "b1d8780d-b827-4df1-a9e7-682fa9ff1700",
+      "id": "0942ef6f-fd4a-4014-9112-9fd4d2f14c97",
       "key": "CEO Id",
       "value": "5e52cd6d9747f8256de9fdf9"
     },
     {
-      "id": "354aebea-05b8-435a-b7ad-1f71df3b4605",
+      "id": "895af4fc-b6d3-44d2-9cd7-caa06466bbe9",
       "key": "President Id",
       "value": "5e52cd809747f8256de9fdfa"
     },
     {
-      "id": "a84200d6-b076-49e4-89d6-4f7ecffbed43",
+      "id": "95927ff1-67c2-4d59-946b-3eed3a3756ae",
       "key": "VP1 Id",
       "value": "5e52cd909747f8256de9fdfb"
     },
     {
-      "id": "64d8fa77-3484-4b98-8285-e62902e5bc0a",
+      "id": "b46941b1-fc35-499b-9e6f-052978d5de46",
       "key": "VP2 Id",
       "value": "5e52cda09747f8256de9fdfc"
     },
     {
-      "id": "9800016c-9d5d-42aa-a270-bfb65f49b6a1",
+      "id": "77ef9c37-dd70-446e-90b1-86b57591a182",
       "key": "VP3 Id",
       "value": "60c812e4edebab30cbead5e4"
     },
     {
-      "id": "6aa95b05-356b-4f84-be81-919620deb172",
+      "id": "4724e664-2bde-47d3-a828-fd39d631fc3f",
       "key": "Director1 Id",
       "value": "5e52cdb39747f8256de9fdfd"
     },
     {
-      "id": "8265dd28-ab7e-4c30-9990-7674dec33feb",
+      "id": "7d120143-6fe7-49b6-816b-f127aabc7b98",
       "key": "Director2 Id",
       "value": "5e52cdc99747f8256de9fdfe"
     },
     {
-      "id": "2d6ac9ea-a79f-45d3-9ebc-dde73c031b0c",
+      "id": "7c099c26-435d-4fe7-8cbb-ef3ad79df25d",
       "key": "Account Owner Policy Id",
       "value": "5e52e80c9747f8256de9fe07"
     },
     {
-      "id": "89b7fa96-1ed2-48c6-aac2-95c69c83d3e0",
+      "id": "fea624c0-aa19-4332-a532-10821e12de81",
       "key": "Account Admin Policy Id",
       "value": "5e52e5789747f8256de9fe05"
     },
     {
-      "id": "b64da12a-b0ea-45c0-915b-9d630745409e",
+      "id": "6614e813-981b-43dd-bf91-5cb6d2dc3fa7",
       "key": "App 1 Id",
       "value": "5fd97addda34d206d9f31953"
     }
