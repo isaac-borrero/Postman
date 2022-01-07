@@ -436,7 +436,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"AccountFRN\":\"{{Account FRN}}\",\r\n    \"Policy\":\r\n    {\r\n        \"FRN\":\"\",\r\n        \"PolicyName\":\"AccountAdmin\",\r\n        \"TypeName\":\"\",\r\n        \"AccountId\":\"\",\r\n        \"Statements\":\r\n        [\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STACT\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"account:getaccount\",\"Change\":1},\r\n                    {\"Value\":\"account:updateaccount\",\"Change\":1},\r\n                    {\"Value\":\"account:adduserattribute\",\"Change\":1},\r\n                    {\"Value\":\"account:deleteuserattribute\",\"Change\":1},\r\n                    {\"Value\":\"account:createapp\",\"Change\":1},\r\n                    {\"Value\":\"account:createuser\",\"Change\":1},\r\n                    {\"Value\":\"account:createpolicy\",\"Change\":1},\r\n                    {\"Value\":\"account:listusers\",\"Change\":1},\r\n                    {\"Value\":\"account:listapps\",\"Change\":1},\r\n                    {\"Value\":\"account:pagedlistapps\",\"Change\":1},\r\n                    {\"Value\":\"account:listpolicies\",\"Change\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    {{Account FRN}}\r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STUSR\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"user:getuser\",\"Change\":1},\r\n                    {\"Value\":\"user:updateuser\",\"Change\":1},\r\n                    {\"Value\":\"user:createpasswordreset\",\"Change\":1},\r\n                    {\"Value\":\"user:updatepasswordreset\",\"Change\":1}\r\n\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    \"frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*\"\r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STAPP\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"app:getapp\",\"Change\":1},\r\n                    {\"Value\":\"app:getapppackage\",\"Change\":1},\r\n                    {\"Value\":\"app:getapppackage\",\"Change\":1},\r\n                    {\"Value\":\"app:createmodel\",\"Change\":1},\r\n                    {\"Value\":\"app:listmodels\",\"Change\":1},\r\n                    {\"Value\":\"app:listviews\",\"Change\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    \"frn:app:aws:pdx:5d871ec9fee167616376f4e4:*\"\r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STREC\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"record:getrecord\",\"Change\":1},\r\n                    {\"Value\":\"record:updaterecord\",\"Change\":1},\r\n                    {\"Value\":\"record:deleterecord\",\"Change\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    \r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STMOD\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STPOL\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                ]\r\n            } \r\n        ]\r\n    }\r\n}",
+          "raw": "   {\r\n        \"Id\":\"{{Account Admin Policy Id}}\",\r\n        \"PolicyName\":\"AccountAdmin\",\r\n        \"FRN\":\"{{Account Admin Policy FRN}}\",\r\n        \"TypeName\":\"BPLC\",\r\n        \"AccountId\":\"{{Account Id}}\",\r\n        \"Statements\":\r\n        [\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STACT\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"account:getaccount\",\"Change\":1},\r\n                    {\"Value\":\"account:updateaccount\",\"Change\":1},\r\n                    {\"Value\":\"account:adduserattribute\",\"Change\":1},\r\n                    {\"Value\":\"account:deleteuserattribute\",\"Change\":1},\r\n                    {\"Value\":\"account:createapp\",\"Change\":1},\r\n                    {\"Value\":\"account:createuser\",\"Change\":1},\r\n                    {\"Value\":\"account:createpolicy\",\"Change\":1},\r\n                    {\"Value\":\"account:listusers\",\"Change\":1},\r\n                    {\"Value\":\"account:listapps\",\"Change\":1},\r\n                    {\"Value\":\"account:pagedlistapps\",\"Change\":1},\r\n                    {\"Value\":\"account:listpolicies\",\"Change\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    \"{{Account FRN}}\"\r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STUSR\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"user:getuser\",\"Change\":1},\r\n                    {\"Value\":\"user:updateuser\",\"Change\":1},\r\n                    {\"Value\":\"user:createpasswordreset\",\"Change\":1},\r\n                    {\"Value\":\"user:updatepasswordreset\",\"Change\":1}\r\n\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    \"frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*\"\r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STAPP\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"app:getapp\",\"Change\":1},\r\n                    {\"Value\":\"app:getapppackage\",\"Change\":1},\r\n                    {\"Value\":\"app:getapppackage\",\"Change\":1},\r\n                    {\"Value\":\"app:createmodel\",\"Change\":1},\r\n                    {\"Value\":\"app:listmodels\",\"Change\":1},\r\n                    {\"Value\":\"app:listviews\",\"Change\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    \"frn:app:aws:pdx:5d871ec9fee167616376f4e4:*\"\r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STREC\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"record:getrecord\",\"Change\":1},\r\n                    {\"Value\":\"record:updaterecord\",\"Change\":1},\r\n                    {\"Value\":\"record:deleterecord\",\"Change\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    \r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STMOD\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                ]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"Type\":\"STPOL\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                ]\r\n            } \r\n        ]\r\n    }\r\n",
           "options": {
             "raw": {
               "language": "json"
@@ -444,13 +444,13 @@
           }
         },
         "url": {
-          "raw": "{{Host IP Address}}/account/createuser?FRN={{Account FRN}}",
+          "raw": "{{Host IP Address}}/account/createpolicy?FRN={{Account FRN}}",
           "host": [
             "{{Host IP Address}}"
           ],
           "path": [
             "account",
-            "createuser"
+            "createpolicy"
           ],
           "query": [
             {
@@ -473,7 +473,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "f65d35d7-89a0-4804-b0ea-3ed04a3a3d69",
+        "id": "49f13341-677d-47a7-9096-3d1539623ca4",
         "type": "text/javascript",
         "exec": [
           ""
@@ -483,7 +483,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "e6636b53-c295-48da-a608-951c471d3c54",
+        "id": "75a3814f-35a1-49f5-bd36-5da7479ee3e7",
         "type": "text/javascript",
         "exec": [
           ""
@@ -493,134 +493,140 @@
   ],
   "variable": [
     {
-      "id": "ecf9530b-7801-456c-bad3-2893412c21f0",
+      "id": "7a8c37ec-77de-4d8e-9eaf-18de81409e6a",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "c351edbd-9203-4d31-95db-e8b46ebc58ec",
+      "id": "880cd656-2e06-4014-8776-c3b7105fcda5",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "12dd3b4d-0fe5-4064-896e-6b1ef23c6c99",
+      "id": "b6b6f62a-61c2-4ec1-ad08-319d4d576dcd",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "5264dc09-3ccf-4b4e-898a-9bd3b9a3d3c8",
+      "id": "c0b1ca18-aa91-45db-8c9e-394f295cc6e7",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "ff9807ce-e1a7-4417-9217-32b9190030eb",
+      "id": "0e884ee9-35e5-4ff5-a8c5-6aa182b4ac94",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "03937880-c9a9-431d-af1d-7e973b2084c7",
+      "id": "46d5cee2-c2eb-43c2-b547-7c0f09ea1388",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "f60b1b41-e9ba-4d78-88cb-8d5239c84db9",
+      "id": "a83fce26-5bb7-4ff6-8602-f50d6c6dbf2f",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "3e1a1132-f66a-4f9a-b339-dd7f9416ae72",
+      "id": "232f090f-c917-4067-8e1b-f3e705f30228",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "491203d3-bcfd-4cd0-bc2f-e46fd5d15f06",
+      "id": "89ebdadd-a6dd-4d07-8c13-bccac725a7db",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "888101a2-8fc2-4d89-9cfb-417bedfffee8",
+      "id": "30608c70-aff3-4c58-aa61-668db6cf3c10",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     },
     {
-      "id": "1292e497-749e-40e3-a527-c28859d940f4",
+      "id": "4a3ecf3e-8316-46d4-99ec-2f92f8c7c1a0",
       "key": "Owner Id",
       "value": "5dc0e5fd3fef576d4983bdad"
     },
     {
-      "id": "c6aaa558-28ea-439d-85b5-a9dbbca7b60d",
+      "id": "c12ef14a-3640-489c-9a89-069717bac7fa",
       "key": "Owner FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "fafe587f-09a9-46a6-84f5-848efd8dd5a6",
+      "id": "4bff1a94-e822-4580-8833-952750a60f66",
       "key": "Admin Id",
       "value": "5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "25d34971-22df-4a6e-8ae3-06d474c7efc4",
+      "id": "fe5bc67f-ad5d-4a1f-9b8e-715aefae6e2c",
       "key": "Admin FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "36e46b03-3895-4a82-9b10-f7f864df4462",
+      "id": "c39a150f-42d8-4cbc-804f-889bb21c1c9c",
       "key": "CEO Id",
       "value": "5e52cd6d9747f8256de9fdf9"
     },
     {
-      "id": "1937e1bb-606f-4e14-8811-0160b2403771",
+      "id": "6ed16150-6654-425e-abab-b23f1209e912",
       "key": "President Id",
       "value": "5e52cd809747f8256de9fdfa"
     },
     {
-      "id": "2b3071d0-61d5-4d9b-a4a2-64e31477f806",
+      "id": "8dfe7ff2-cf26-45eb-92d3-80e97ff65847",
       "key": "VP1 Id",
       "value": "5e52cd909747f8256de9fdfb"
     },
     {
-      "id": "38b53240-061e-4bfa-9dbe-043fad140cb3",
+      "id": "205e15dd-b16a-4eb6-abc5-3b1fc8308503",
       "key": "VP2 Id",
       "value": "5e52cda09747f8256de9fdfc"
     },
     {
-      "id": "b6048e42-fd7a-4578-ad2f-19af75b3a372",
+      "id": "7db9ab13-522a-401d-8c06-2df2803b1817",
       "key": "VP3 Id",
       "value": "60c812e4edebab30cbead5e4"
     },
     {
-      "id": "0323f017-5995-4f00-b596-9712b3c7e5e3",
+      "id": "1f51aa07-c338-4c3e-8732-1c53289bf7ee",
       "key": "Director1 Id",
       "value": "5e52cdb39747f8256de9fdfd"
     },
     {
-      "id": "6c858556-7f24-4b39-a743-15d0c3c1756e",
+      "id": "6d7b5d40-cef3-40a8-b685-a301d3f616d6",
       "key": "Director2 Id",
       "value": "5e52cdc99747f8256de9fdfe"
     },
     {
-      "id": "b990a2f2-0d39-4999-9d81-7befd917cc31",
+      "id": "b7367995-8b2b-4153-8dd5-55818e9796f3",
       "key": "Account Owner Policy Id",
       "value": "5e52e80c9747f8256de9fe07"
     },
     {
-      "id": "d287f7fd-6928-4fbb-b730-4dca22090773",
+      "id": "6ada7395-5e4b-45e0-a736-2ac7eaddb4c0",
       "key": "Account Admin Policy Id",
       "value": "5e52e5789747f8256de9fe05"
     },
     {
-      "id": "19730ec8-c453-45ac-b62e-110b378f544c",
+      "id": "a5254675-f00f-4fc2-8544-82020be93a59",
       "key": "App 1 Id",
       "value": "5fd97addda34d206d9f31953"
     },
     {
-      "id": "e809c9c6-7618-4964-90e1-10466ae8e43e",
+      "id": "10852947-49e0-4890-9b56-8316045398e3",
       "key": "App 1 FRN",
       "value": "frn:app:aws:pdx:5d871ec9fee167616376f4e4:5fd97addda34d206d9f31953"
     },
     {
-      "id": "2111eab1-cc2b-4931-b7c4-9add6fecb42f",
+      "id": "a2d95d16-798a-4b95-942b-78f87b93853b",
       "key": "App 1 Model 1 Id",
       "value": "5fde64c13ea45075f974b384"
+    },
+    {
+      "id": "b66216a5-9418-402c-8609-950a540c2d32",
+      "key": "Account Admin Policy FRN",
+      "value": "frn:policy:aws:pdx:5d871ec9fee167616376f4e4:5e52e80c9747f8256de9fe07",
+      "type": "string"
     }
   ]
 }
