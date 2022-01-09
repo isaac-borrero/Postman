@@ -506,9 +506,24 @@
         "disableBodyPruning": true
       },
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
-        "url": null
+        "url": {
+          "raw": "{{Host IP Address}}/app/publishcompletedmodel?FRN={{App FRN - SimpleVanilla}}",
+          "host": [
+            "{{Host IP Address}}"
+          ],
+          "path": [
+            "app",
+            "publishcompletedmodel"
+          ],
+          "query": [
+            {
+              "key": "FRN",
+              "value": "{{App FRN - SimpleVanilla}}"
+            }
+          ]
+        }
       },
       "response": []
     }
@@ -543,149 +558,149 @@
   ],
   "variable": [
     {
-      "id": "245cafd5-d4ea-4964-8dc6-4ee17f062bc3",
+      "id": "64e8c74c-68bd-402e-be52-e865af5f2a49",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "6f597932-bb46-44d7-bd64-cea616e57b87",
+      "id": "453d8014-1ac7-4b56-b67e-78f8d360b6bb",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "4fed4bcf-7255-47d1-911b-046bd9ab5b12",
+      "id": "b4620f9f-6f71-4096-b835-39f6658ec8b4",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "b24cd72a-0b12-40fa-96e4-45b6eb0ee5ac",
+      "id": "cb15cbe4-aef0-4dc8-a6aa-5350ed376b6a",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "f7995886-9c7d-4f81-a8b9-8af8ccba28e3",
+      "id": "4a1eade6-fe13-4fc6-b7b5-4797b9d6d888",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "a65cb883-8fcb-435e-a5c1-71ac15f35a59",
+      "id": "14d0834e-f46b-4e2d-bfab-f316f92e4c2e",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "8f269c3b-c3ce-43d1-baac-13b9be85952b",
+      "id": "ad07e473-ef3b-4d33-a054-bac8a8e4528d",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "4a708071-2042-4a18-818b-5aa88c5ed2b4",
+      "id": "b172a279-fc71-4180-b897-86221640ed63",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "23ccf20d-536b-47e8-89ad-a2ac9bcc7d23",
+      "id": "de771589-c303-49f0-a9ba-b3d057902725",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "5975154e-6b6c-4cb8-a87e-439c9f74e9fc",
+      "id": "e6c95e50-a304-4a56-a7f3-a976693cb746",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     },
     {
-      "id": "f23e3efb-8178-4ade-97c4-18b764c56897",
+      "id": "6e8d2c8f-0ece-4c20-8d70-aeea4f3fee84",
       "key": "Owner Id",
       "value": "5dc0e5fd3fef576d4983bdad"
     },
     {
-      "id": "2ac3b167-e620-4edc-9daf-b41065f02489",
+      "id": "1e8ad6d9-8e40-40ed-a82f-ce05545cf269",
       "key": "Owner FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "0c7dcb25-8f8e-4420-be29-ae9137e05f26",
+      "id": "1e087995-9f3c-4545-a935-866238cd8645",
       "key": "Admin Id",
       "value": "5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "678e4560-d9dd-4a36-8523-438f9add5568",
+      "id": "0cdb6f62-5af4-4491-b181-0867bf014bb2",
       "key": "Admin FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "559a10c9-205f-43a5-9fd2-593b72f4bd47",
+      "id": "88628119-d2ba-4145-b52d-f592bca4d9ca",
       "key": "CEO Id",
       "value": "5e52cd6d9747f8256de9fdf9"
     },
     {
-      "id": "79b2f6a9-189d-4b14-add1-a67069798e5a",
+      "id": "66e6bee9-63d8-4bf1-a19f-547850cdb09e",
       "key": "President Id",
       "value": "5e52cd809747f8256de9fdfa"
     },
     {
-      "id": "c95cb856-2c29-4d98-85b8-726ac5c4feb1",
+      "id": "1d091249-78db-4899-bc37-8597d5432d3e",
       "key": "VP1 Id",
       "value": "5e52cd909747f8256de9fdfb"
     },
     {
-      "id": "cc4d738d-d658-4765-9fe4-7235d211e848",
+      "id": "e86ddfb8-9f96-4b7d-af08-c976b6f297eb",
       "key": "VP2 Id",
       "value": "5e52cda09747f8256de9fdfc"
     },
     {
-      "id": "f58854ba-a020-4a4e-a31c-6af7225316fa",
+      "id": "1ead408e-790a-48af-bf2f-b159b49edf6b",
       "key": "VP3 Id",
       "value": "60c812e4edebab30cbead5e4"
     },
     {
-      "id": "e9b98bf1-a3d8-45b1-a139-e5144e869493",
+      "id": "34fffc75-1c22-47f5-977d-42898fdda368",
       "key": "Director1 Id",
       "value": "5e52cdb39747f8256de9fdfd"
     },
     {
-      "id": "7e103f0e-6d23-469b-bb6e-e25f902f46f9",
+      "id": "b15bcb31-0a09-4d75-860e-aa4c58a30a69",
       "key": "Director2 Id",
       "value": "5e52cdc99747f8256de9fdfe"
     },
     {
-      "id": "c255c256-5948-4b2a-903b-bdb34f057270",
+      "id": "ef677323-eee1-4ded-82f2-17e075c5976f",
       "key": "Account Owner Policy Id",
       "value": "5e52e80c9747f8256de9fe07"
     },
     {
-      "id": "8f5578c2-f611-4ef8-bbe8-0f0f7d7cfea3",
+      "id": "d898e68e-8109-4668-90af-ec4f9fb01c52",
       "key": "Account Admin Policy Id",
       "value": "5e52e5789747f8256de9fe05"
     },
     {
-      "id": "ee63d080-e39a-4e62-ba99-f96b46bc374d",
+      "id": "4203b90c-967f-472f-b9a3-6c937474a792",
       "key": "App 1 Id",
       "value": "5fd97addda34d206d9f31953"
     },
     {
-      "id": "180016ad-5f4d-4e54-92ac-08ce3c2130b4",
+      "id": "fb84f53c-ed0c-4507-9d97-b9f95c3539cb",
       "key": "App 1 FRN",
       "value": "frn:app:aws:pdx:5d871ec9fee167616376f4e4:5fd97addda34d206d9f31953"
     },
     {
-      "id": "f7893d7f-5ce0-4e51-890a-19a10d725163",
+      "id": "83266dc4-f679-4722-a3b7-f5320d202dd6",
       "key": "App 1 Model 1 Id",
       "value": "5fde64c13ea45075f974b384"
     },
     {
-      "id": "f3102f23-8f68-4e2a-aad7-5fc63c7f69bf",
+      "id": "e0c7e7f1-9964-4977-bb9c-0981adbe98fb",
       "key": "Account Admin Policy FRN",
       "value": "frn:policy:aws:pdx:5d871ec9fee167616376f4e4:5e52e80c9747f8256de9fe07",
       "type": "string"
     },
     {
-      "id": "a6fad38d-4edf-4772-8787-ea7548f5d9c9",
+      "id": "1da1ea6f-9965-47e1-92a9-94e59e7fb54b",
       "key": "App Id - Simple Vanilla",
       "value": "61574393ab3980c1f829ed5b",
       "type": "string"
     },
     {
-      "id": "3e08783c-6b07-43c8-abc1-23b3d0cbc947",
+      "id": "fcc0d8af-748b-4ffa-8020-e9fe5b1e4d5b",
       "key": "App FRN - Simple Vanilla",
       "value": "frn:app:aws:pdx:5d871ec9fee167616376f4e4:61574393ab3980c1f829ed5b",
       "type": "string"
