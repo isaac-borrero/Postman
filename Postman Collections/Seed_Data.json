@@ -106,43 +106,6 @@
         "url": "{{Host IP Address}}/authn/gettoken"
       },
       "response": []
-    },
-    {
-      "name": "CreatePolicy - AccountAdmin",
-      "id": "acf1a6a1-6fec-4dcc-8485-aa9bf07c9485",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "   {\r\n        \"_id\":\"{{Account Admin Policy Id}}\",\r\n        \"PolicyName\":\"AccountAdmin\",\r\n        \"FRN\":\"{{Account Admin Policy FRN}}\",\r\n        \"_t\":\"BPLC\",\r\n        \"AccountId\":\"{{Account Id}}\",\r\n        \"Statements\":\r\n        [\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"_t\":\"STACT\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"account:getaccount\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:updateaccount\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:adduserattribute\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:deleteuserattribute\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:createapp\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:createuser\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:createpolicy\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:listusers\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:listapps\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:pagedlistapps\",\"ChangeType\":1},\r\n                    {\"Value\":\"account:listpolicies\",\"ChangeType\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    {\"Value\":\"{{Account FRN}}\",\"ChangeType\":1}\r\n                ],\r\n                \"ResourceRules\":[],\r\n                \"ContextRules\":[]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"_t\":\"STUSR\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"user:getuser\",\"ChangeType\":1},\r\n                    {\"Value\":\"user:updateuser\",\"ChangeType\":1},\r\n                    {\"Value\":\"user:createpasswordreset\",\"ChangeType\":1},\r\n                    {\"Value\":\"user:updatepasswordreset\",\"ChangeType\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    {\"Value\":\"frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*\",\"ChangeType\":1}\r\n                ],\r\n                \"ResourceRules\":[],\r\n                \"ContextRules\":[]\r\n            },\r\n            {\r\n                \"PolicyId\":\"{{Account Admin Policy Id}}\",\r\n                \"_t\":\"STAPP\",\r\n                \"AccountId\":\"{{Account Id}}\",\r\n                \"Actions\":\r\n                [\r\n                    {\"Value\":\"app:getapp\",\"ChangeType\":1},\r\n                    {\"Value\":\"app:getapppackage\",\"ChangeType\":1},\r\n                    {\"Value\":\"app:createmodel\",\"ChangeType\":1},\r\n                    {\"Value\":\"app:listmodels\",\"ChangeType\":1},\r\n                    {\"Value\":\"app:listviews\",\"ChangeType\":1}\r\n                ],\r\n                \"Resources\":\r\n                [\r\n                    {\"Value\":\"frn:app:aws:pdx:5d871ec9fee167616376f4e4:*\",\"ChangeType\":1}\r\n                ],\r\n                \"ResourceRules\":[],\r\n                \"ContextRules\":[]\r\n            }\r\n        ]\r\n    }\r\n",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "{{Host IP Address}}/account/createpolicy?FRN={{Account FRN}}",
-          "host": [
-            "{{Host IP Address}}"
-          ],
-          "path": [
-            "account",
-            "createpolicy"
-          ],
-          "query": [
-            {
-              "key": "FRN",
-              "value": "{{Account FRN}}"
-            }
-          ]
-        }
-      },
-      "response": []
     }
   ],
   "auth": {
@@ -175,161 +138,161 @@
   ],
   "variable": [
     {
-      "id": "b4f507e6-0480-4137-9fdf-2449dfceac7d",
+      "id": "0e538a1b-e51d-4cf9-99da-17ab2b1f9bf3",
       "key": "Account Id",
       "value": "5d871ec9fee167616376f4e4"
     },
     {
-      "id": "4373bf70-53f9-4433-8f36-87102527ff79",
+      "id": "8f2639e8-2335-4797-9057-b31d5157dcd0",
       "key": "Account FRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4"
     },
     {
-      "id": "e33a2cf1-45b6-413a-a4ba-d86784cf80cc",
+      "id": "ad8ede7d-4634-483a-b684-28e43c199292",
       "key": "Account Name",
       "value": "TestAccountOne"
     },
     {
-      "id": "5776d504-3dd2-4bb1-83b5-4acd937ae46c",
+      "id": "45c350b8-9eac-4e59-9ba4-70f54db802f5",
       "key": "Cloud",
       "value": "aws"
     },
     {
-      "id": "0780e028-4dbe-4662-83aa-0a12d5bdd487",
+      "id": "7fa883ac-e73c-48d7-b9cc-7e3c57e198d8",
       "key": "Region",
       "value": "pdx"
     },
     {
-      "id": "66d184ed-4707-4954-afc3-9e64ef6efad2",
+      "id": "e9ad6a11-6444-4058-a7ec-fadff07319c7",
       "key": "Account All",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "cd4297c8-8b15-481d-b43f-8974efbc4201",
+      "id": "3dd7a3ff-7abe-4a52-8016-94081231167d",
       "key": "All Actor FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:*"
     },
     {
-      "id": "56ecae69-3c7c-4ecd-a29b-e804d289f9e3",
+      "id": "428075ac-5573-49d7-a8b5-f9e445f80d0c",
       "key": "All App FRN",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "21268576-774f-4081-95d3-2e870f9f859a",
+      "id": "63d8e959-d007-4272-bbed-8e812dfa2811",
       "key": "All Model Variants",
       "value": "frn:modelvariant:{0}:{1}:{2}:{3}:{4}/*"
     },
     {
-      "id": "7cba0fe5-f3bd-4b91-b3ce-e7487a2ae786",
+      "id": "1f82b4db-5ab9-4415-a0e1-9a631981243d",
       "key": "All Variant Records",
       "value": "frn:record:{0}:{1}:{2}:{3}:{4}/{5}>*"
     },
     {
-      "id": "c7a715c7-a172-4db4-838b-3015f9d2def2",
+      "id": "0f34e092-5cc5-49ff-943b-8a744615e6cf",
       "key": "Owner Id",
       "value": "5dc0e5fd3fef576d4983bdad"
     },
     {
-      "id": "b2de1785-33e6-44b6-9032-9a629f4b3f6b",
+      "id": "d8641a30-1bdf-4915-a5e0-1099c0b4e07c",
       "key": "Owner FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "a2b6767e-178f-4826-8071-5f564840c7c9",
+      "id": "b60c1c5a-a919-4432-86cc-452e82f91384",
       "key": "Admin Id",
       "value": "5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "a5da93ee-8724-4992-946b-5d0910bc7ffe",
+      "id": "df2893db-a594-45ae-8455-4dcc314c3fc1",
       "key": "Admin FRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:5e52c5969747f8256de9fdf8"
     },
     {
-      "id": "cde74ea8-0726-443a-b099-8668896030fc",
+      "id": "2d6c4cfd-bb67-4cd1-ab16-5144a8459ed7",
       "key": "CEO Id",
       "value": "5e52cd6d9747f8256de9fdf9"
     },
     {
-      "id": "d5afee7d-63c9-4274-9d35-850699b2edc1",
+      "id": "8d4c82dc-54c3-4502-b2fc-fa186249998d",
       "key": "President Id",
       "value": "5e52cd809747f8256de9fdfa"
     },
     {
-      "id": "c6eba459-7232-4ca9-9129-b92c11e5c8c6",
+      "id": "3f3e8271-e608-4587-bada-9e229ad9512b",
       "key": "VP1 Id",
       "value": "5e52cd909747f8256de9fdfb"
     },
     {
-      "id": "2157d2b1-bcf6-4b7d-8798-9b5a33956129",
+      "id": "6d56d005-c100-4b49-9e02-21475d881e4f",
       "key": "VP2 Id",
       "value": "5e52cda09747f8256de9fdfc"
     },
     {
-      "id": "be8fcb46-73ca-4bbb-9653-e5f01e4e3098",
+      "id": "ed8952ed-894c-4194-a713-5bf28dbdbb9a",
       "key": "VP3 Id",
       "value": "60c812e4edebab30cbead5e4"
     },
     {
-      "id": "59e9fb4f-9423-43e3-b0a4-d391dfa48a24",
+      "id": "18fc0f51-ebde-4eb7-91bc-8c757d3a944a",
       "key": "Director1 Id",
       "value": "5e52cdb39747f8256de9fdfd"
     },
     {
-      "id": "de4dc46e-244a-49b2-b651-e5eb9fa81400",
+      "id": "334ec812-bb2f-409c-bcb5-875480451675",
       "key": "Director2 Id",
       "value": "5e52cdc99747f8256de9fdfe"
     },
     {
-      "id": "6483189a-1f2b-4028-9f1b-fa83790a854d",
+      "id": "d798070b-e104-465e-8e8d-0b422ef8982e",
       "key": "Account Owner Policy Id",
       "value": "5e52e80c9747f8256de9fe07"
     },
     {
-      "id": "219a9e79-50b8-4d7f-a23c-d6ece5a513ab",
+      "id": "5b104b70-17fa-47f9-93b9-7d2cfd3f4fbc",
       "key": "Account Admin Policy Id",
       "value": "5e52e5789747f8256de9fe05"
     },
     {
-      "id": "56d0167a-c3ac-4082-a817-006784a62abf",
+      "id": "489ab8e8-53d9-4006-b100-d914dbc13a47",
       "key": "App 1 Id",
       "value": "5fd97addda34d206d9f31953"
     },
     {
-      "id": "7d131159-a3c1-460b-bcfa-e459f80e5aa0",
+      "id": "845f3984-2feb-4968-83df-e5e5c0acb344",
       "key": "App 1 FRN",
       "value": "frn:app:aws:pdx:5d871ec9fee167616376f4e4:5fd97addda34d206d9f31953"
     },
     {
-      "id": "1a5e8d90-f06e-4049-a368-dc7db078d961",
+      "id": "43c93d25-c922-47e3-afd7-46ef19fe3674",
       "key": "App 1 Model 1 Id",
       "value": "5fde64c13ea45075f974b384"
     },
     {
-      "id": "773e6300-9f3a-4ed2-a93a-9a00214264a1",
+      "id": "b7bf7a44-10f0-4bd6-9a03-a5a95aeb8221",
       "key": "Account Admin Policy FRN",
       "value": "frn:policy:aws:pdx:5d871ec9fee167616376f4e4:5e52e80c9747f8256de9fe07",
       "type": "string"
     },
     {
-      "id": "7fe4708d-26c2-4237-9f71-00bb25a700c9",
+      "id": "31306310-5ace-46c3-b2e0-7f4cfd698cf8",
       "key": "App Id - Simple Vanilla",
       "value": "61574393ab3980c1f829ed5b",
       "type": "string"
     },
     {
-      "id": "b32471ec-b21a-411a-b93f-41986b96308a",
+      "id": "5c992f79-4ade-49c2-825c-fbd2a09a0db5",
       "key": "App FRN - Simple Vanilla",
       "value": "frn:app:aws:pdx:5d871ec9fee167616376f4e4:61574393ab3980c1f829ed5b",
       "type": "string"
     },
     {
-      "id": "1908e55a-f43d-4787-91aa-fbaf39b33419",
+      "id": "30a5e963-86b2-445b-b35b-1d9ac5b205f1",
       "key": "Model Id - Organizations",
       "value": "61574393ab3980c1f829ed5b",
       "type": "string"
     },
     {
-      "id": "991b13fc-2e49-4a64-a3df-bc5e4b564724",
+      "id": "cce0c6f1-384e-43a9-b324-a4644735f7ad",
       "key": "Model FRN - Organizations",
       "value": "frn:model:aws:pdx:5d871ec9fee167616376f4e4:61574393ab3980c1f829ed5b:",
       "type": "string"
