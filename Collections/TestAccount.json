@@ -89,7 +89,7 @@
                   "response": []
                 },
                 {
-                  "name": "CreateRecord - A1M1V1R3",
+                  "name": "CreateRecord  (A1M1V1-R3)",
                   "id": "2ad9835c-7274-4836-acfd-bf2c56fb46c0",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
@@ -107,7 +107,7 @@
                       }
                     },
                     "url": {
-                      "raw": "{{Host IP Address}}/record/createrecord?FRN={{App1Model1Variant1FRN}}",
+                      "raw": "{{Host IP Address}}/record/createrecord?FRN={{A1M1V1FRN}}",
                       "host": [
                         "{{Host IP Address}}"
                       ],
@@ -118,7 +118,7 @@
                       "query": [
                         {
                           "key": "FRN",
-                          "value": "{{App1Model1Variant1FRN}}"
+                          "value": "{{A1M1V1FRN}}"
                         }
                       ]
                     }
@@ -2356,463 +2356,463 @@
   ],
   "variable": [
     {
-      "id": "f3e611d6-a6c7-430d-850a-7bc31a9c47e5",
+      "id": "01330c8b-ef6a-4ea2-b22f-311404168f19",
       "key": "Cloud",
       "value": "aws",
       "type": "string"
     },
     {
-      "id": "0873793f-ee61-4efa-b5c8-7b28f17a6694",
+      "id": "c86d2f04-49dc-467b-b238-fc639ff8607a",
       "key": "Region",
       "value": "pdx",
       "type": "string"
     },
     {
-      "id": "62403551-66f3-4d0e-92dd-060512f86bc7",
+      "id": "250feec9-d48e-4eee-9e94-865b629cbccd",
       "key": "OwnerId",
       "value": "60ca00b81204f0f2877004ec",
       "type": "string"
     },
     {
-      "id": "d632b3d1-3ffe-444e-8782-0115ad433e7e",
+      "id": "0570f4f4-ef77-4f15-81be-9ebaef0b3c42",
       "key": "OwnerFRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004ec",
       "type": "string"
     },
     {
-      "id": "bd33cb6b-4e27-4a1a-a584-8cb391c9c4dc",
+      "id": "596b403c-9d9e-452f-899d-5bfc3d3503e8",
       "key": "AdminUserId",
       "value": "60ca00b81204f0f2877004ed",
       "type": "string"
     },
     {
-      "id": "2a5c71ed-d5c6-4065-a2f2-33ba3873e265",
+      "id": "ff5f2879-cc92-4ddb-910a-e96f3d473ef2",
       "key": "AdminUserFRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004ed",
       "type": "string"
     },
     {
-      "id": "0840c97c-a8f2-428b-bc2b-a9867c58fbb3",
+      "id": "2b0b7e37-0c72-4b23-8855-7dd1a1e6928b",
       "key": "UserCEO",
       "value": "60ca00b81204f0f2877004f1",
       "type": "string"
     },
     {
-      "id": "9739e2b5-ab03-4c3f-a148-ac284a5f56e3",
+      "id": "d6af3864-a8e8-44f2-b7f8-69d85932efc0",
       "key": "UserCEOFRN",
       "value": "frn:actor:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004f1",
       "type": "string"
     },
     {
-      "id": "ce47db7f-bf0d-4c48-8b00-04ba5329acb5",
+      "id": "935bc917-6eef-479a-bd8e-b850f7b0b8b6",
       "key": "UserPresident",
       "value": "60ca00b81204f0f287700533",
       "type": "string"
     },
     {
-      "id": "97e7b6c4-2ab9-48dc-a206-00b1f7247eb7",
+      "id": "031619bf-8267-4d47-b2a9-32a937f9feb5",
       "key": "AccountId",
       "value": "5d871ec9fee167616376f4e4",
       "type": "string"
     },
     {
-      "id": "78a53262-f248-4625-b3fe-5132252fca2a",
+      "id": "70230254-7712-4e1c-a527-744d4821750e",
       "key": "AccountFRN",
       "value": "frn:account:aws:pdx:5d871ec9fee167616376f4e4",
       "type": "string"
     },
     {
-      "id": "dc21aa52-b36c-445b-8445-07012f4537aa",
+      "id": "b4736705-e33a-45fc-a267-fe511ba80910",
       "key": "AccountName",
       "value": "FireStarTesting",
       "type": "string"
     },
     {
-      "id": "c2304aaf-c1d2-4775-b78c-a0faab04c8fd",
+      "id": "349073e5-a9a7-4128-8fb3-5996b9e8ed7f",
       "key": "A1",
       "value": "60ca00b81204f0f2877004da",
       "type": "string"
     },
     {
-      "id": "f1d96f78-0d51-4929-9c64-dd15a90b6461",
+      "id": "da9330d8-1334-4f74-834b-b9d8a128c0fb",
       "key": "A1FRN",
       "value": "frn:app:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da",
       "type": "string"
     },
     {
-      "id": "901c5050-6765-4d6b-bace-78f14a4867dc",
+      "id": "1ff1eb3a-8b8d-44c4-9979-5d6fcc5aa909",
       "key": "A1M1",
       "value": "60ca00b81204f0f2877004ea",
       "type": "string"
     },
     {
-      "id": "c0aad3b6-67d2-428c-b3ba-eeff0e80fb42",
+      "id": "cd8be254-dc5d-4056-9196-163dd6ca35a6",
       "key": "A1M1FRN",
       "value": "frn:model:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f2877004ea",
       "type": "string"
     },
     {
-      "id": "1778194a-6cd4-4008-8b1b-f083d33efe22",
+      "id": "5b3d1b87-fdc9-4ee8-a9c5-153de6366d91",
       "key": "A1Ml1V0",
       "value": "60ca00b81204f0f2877004ee",
       "type": "string"
     },
     {
-      "id": "91080c47-94a2-4f4c-a40d-452ac1c66d1a",
+      "id": "24bb167b-6e48-4325-97fc-f5d581473e5b",
       "key": "A1M1V0FRN",
       "value": "frn:basevariant:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f2877004ea/60ca00b81204f0f2877004ea",
       "type": "string"
     },
     {
-      "id": "ffb461ea-8f29-457d-bf2f-21e4cd3789f9",
+      "id": "85c588bb-da33-4181-b8e1-9a2a57861a3b",
       "key": "PolicyOneId",
       "value": "60ca00b81204f0f2877004f2",
       "type": "string"
     },
     {
-      "id": "5049a44f-68b3-46ec-a839-d1691fe75984",
+      "id": "2929b9f0-cd94-4059-9bc2-65ebe7dbc7bd",
       "key": "PolicyOneFRN",
       "value": "frn:policy:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004f2",
       "type": "string"
     },
     {
-      "id": "be8180f3-40be-460e-a9e0-cbd9cc9b4a9e",
+      "id": "85e3d873-510b-4b22-90de-aed1f0be037b",
       "key": "A1M1V0-R1",
       "value": "60ca00b81204f0f2877004f2",
       "type": "string"
     },
     {
-      "id": "98ab43b3-7357-488c-8aa1-557951fc697f",
+      "id": "e8da46a4-baa5-47cc-9cb4-ecb11e97c0e8",
       "key": "A1M1V1R1FRN",
       "value": "frn:record:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f2877004ea/60ca00b81204f0f2877004ee>60ca00b81204f0f2877004f2",
       "type": "string"
     },
     {
-      "id": "a058bd42-c642-42e8-b6ed-50e058057726",
+      "id": "b34ef59e-de6d-40e1-9de0-ec8455d6fb75",
       "key": "A1M1V1R2",
       "value": "60ca00b81204f0f2877004f3",
       "type": "string"
     },
     {
-      "id": "6369e83b-0ee2-4aec-a204-c57b632377c6",
+      "id": "72f50826-645f-4183-be7c-1fdaa98e5060",
       "key": "A1M1V1R3",
       "value": "60ca00b81204f0f2877004f4",
       "type": "string"
     },
     {
-      "id": "4920decf-912d-4d08-ae2c-5da046db84e8",
+      "id": "611ebb4f-ce5b-4dd9-bdc9-1f1a943c894f",
       "key": "A1M1V1R4",
       "value": "60ca00b81204f0f2877004f5",
       "type": "string"
     },
     {
-      "id": "3d308331-cf35-4028-aecf-a268b308db7f",
+      "id": "03980535-e86c-4698-923f-282b644aa392",
       "key": "A1M1V1R5",
       "value": "60ca00b81204f0f2877004f6",
       "type": "string"
     },
     {
-      "id": "011f1e69-0940-405b-adc5-0a51a973fcde",
+      "id": "4ebe5e01-77ed-4010-b867-fddee3f7124c",
       "key": "A1M1V1R6",
       "value": "60ca00b81204f0f2877004f7",
       "type": "string"
     },
     {
-      "id": "8b3edadd-6790-4df4-a3c8-38ebf79b404a",
+      "id": "7e72b1e0-1834-4f51-9897-45a36a3a4f18",
       "key": "A1M1V1R7",
       "value": "60ca00b81204f0f2877004f8",
       "type": "string"
     },
     {
-      "id": "92eb191b-603b-4965-acca-280b1aeaca30",
+      "id": "256f53db-8ede-4b51-ad93-496f77a8247e",
       "key": "A1M1V1R8",
       "value": "60ca00b81204f0f2877004f9",
       "type": "string"
     },
     {
-      "id": "97879f94-27e4-4019-bd41-6587fe66ef6e",
+      "id": "fa7949af-3314-4378-b05e-bd8ee26a1795",
       "key": "A1M1V1R9",
       "value": "60ca00b81204f0f2877004fa",
       "type": "string"
     },
     {
-      "id": "47b3ecc2-7f2b-4113-b31c-37f9d7d1f820",
+      "id": "f37b04c6-9166-4646-857d-cb0c66ff895b",
       "key": "A1M1V1R10",
       "value": "60ca00b81204f0f2877004fb",
       "type": "string"
     },
     {
-      "id": "313335e1-8a20-460c-88f7-953d2dad5030",
+      "id": "aa3bf2bc-9324-4b16-9c7b-36b94dc4f22b",
       "key": "A1M1V1R11",
       "value": "60ca00b81204f0f2877004fc",
       "type": "string"
     },
     {
-      "id": "dce412bf-d024-4fd7-988d-1334b79c1c08",
+      "id": "b43d02d4-efc0-4d6c-b1d6-67b469a02b15",
       "key": "A1M1V1R12",
       "value": "60ca00b81204f0f2877004fd",
       "type": "string"
     },
     {
-      "id": "a10031ec-36d1-49a8-8402-4a5415507c61",
+      "id": "6a91e426-39d0-44a1-893c-fd8413bd5430",
       "key": "A1M1V1R13",
       "value": "60ca00b81204f0f2877004fe",
       "type": "string"
     },
     {
-      "id": "8bd15407-0c1a-4d5e-97ce-c5fb58bda034",
+      "id": "8ef14483-24dd-421e-bb22-22d84eacbe74",
       "key": "A1M1V1R14",
       "value": "60ca00b81204f0f2877004ff",
       "type": "string"
     },
     {
-      "id": "54e2e0cb-2819-480f-bf70-a767932ed9c5",
+      "id": "eac48fdb-2d82-4950-b3e4-cd39655a5aa6",
       "key": "A1M1V1R15",
       "value": "60ca00b81204f0f287700500",
       "type": "string"
     },
     {
-      "id": "30ddcca9-4d28-4b24-be94-65f50f064168",
+      "id": "4a80012b-f1bd-4887-b1e8-a63004d5905f",
       "key": "A1M2",
       "value": "60ca00b81204f0f287700501",
       "type": "string"
     },
     {
-      "id": "ff0df70f-bf56-4749-a2ef-db3e9b61a768",
+      "id": "1c40af9a-a707-4ccb-93a7-a4ef96121c1b",
       "key": "A1M2V1",
       "value": "60ca00b81204f0f287700502",
       "type": "string"
     },
     {
-      "id": "c9d64a87-55a2-4acd-b5bb-c4566736a820",
+      "id": "80d01951-fdc1-446b-b00f-8807c9d7b637",
       "key": "A1M2FRN",
       "value": "frn:model:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f287700501",
       "type": "string"
     },
     {
-      "id": "9bfb7d61-bd0b-4d43-814b-dd7dbfb3f776",
+      "id": "4f9a8d51-d2a2-4da3-9bbb-1367d46bdbf1",
       "key": "A1M2V1FRN",
       "value": "frn:modelvariant:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f287700501/60ca00b81204f0f287700502",
       "type": "string"
     },
     {
-      "id": "a7a1c8ac-8349-44fb-96ce-a82dddd50bc0",
+      "id": "cda4a28d-e1da-44d3-9dfe-31ed75134247",
       "key": "A1M2V1R1",
       "value": "60ca00b81204f0f28770050b",
       "type": "string"
     },
     {
-      "id": "91eb3e85-61a8-4648-aafe-41d71a137767",
+      "id": "285bbadf-340f-44af-b815-51f5a07be481",
       "key": "A1M2V1R3",
       "value": "60ca00b81204f0f28770050c",
       "type": "string"
     },
     {
-      "id": "08a1ee77-57a1-44fa-be85-2c7e3e2b5028",
+      "id": "75cced45-6dfb-436c-9d04-7b15294e884f",
       "key": "A1M2V1R4",
       "value": "60ca00b81204f0f28770050d",
       "type": "string"
     },
     {
-      "id": "5ccc7813-b0bf-4afd-8df7-59daeed83555",
+      "id": "776b92be-ee62-4059-a89b-c4ea874d838b",
       "key": "A1M2V1R5",
       "value": "60ca00b81204f0f28770050e",
       "type": "string"
     },
     {
-      "id": "fdedea6e-528b-4a0d-9aa3-bfdcfc9019f1",
+      "id": "a47de1ee-b597-40e3-bb63-02e7529048b4",
       "key": "A1M2V1R6",
       "value": "60ca00b81204f0f28770050f",
       "type": "string"
     },
     {
-      "id": "552ea04e-6174-402c-b49f-1e86e2eb01fd",
+      "id": "1761796a-6aa0-430d-a46f-cffc4bcf5ddb",
       "key": "A1M2V1R7",
       "value": "60ca00b81204f0f287700510",
       "type": "string"
     },
     {
-      "id": "df317310-a239-4f8e-abb4-39b5b0e41078",
+      "id": "d13f11a4-9d43-4d33-bd3d-4ee5b5104de8",
       "key": "A1M2V1R8",
       "value": "60ca00b81204f0f287700511",
       "type": "string"
     },
     {
-      "id": "b1592c8d-7994-4130-b2a9-47fade196d76",
+      "id": "d6d4a852-0118-4884-841a-423b31649673",
       "key": "A1M2V1R9",
       "value": "60ca00b81204f0f287700512",
       "type": "string"
     },
     {
-      "id": "d5ec94f4-16de-4103-a267-3eaad7367d44",
+      "id": "0c1d3a6f-60dc-402e-8524-709e58968411",
       "key": "A1M2V1R10",
       "value": "60ca00b81204f0f287700513",
       "type": "string"
     },
     {
-      "id": "9386981a-0ac7-4eeb-9905-deabfb0f27a7",
+      "id": "aeca4b24-dfc5-404d-8941-aaf8c9ce7f38",
       "key": "A1M2V1R11",
       "value": "60ca00b81204f0f287700514",
       "type": "string"
     },
     {
-      "id": "f9daf302-c9b2-4323-898b-4e00aa79c886",
+      "id": "4c25a645-399a-42b2-9ca3-e451b97042a2",
       "key": "A1M2V1R12",
       "value": "60ca00b81204f0f287700515",
       "type": "string"
     },
     {
-      "id": "900737e9-8c70-4692-b6cf-80ec98d0a28b",
+      "id": "e9369544-08fc-43d6-9a42-e1c7707df621",
       "key": "A1M2V1R13",
       "value": "60ca00b81204f0f287700516",
       "type": "string"
     },
     {
-      "id": "ec9a73fe-8493-445b-af00-60bce3ce9eed",
+      "id": "5674754d-cb20-4f3a-8310-9882328589fd",
       "key": "A1M2V1R14",
       "value": "60ca00b81204f0f287700517",
       "type": "string"
     },
     {
-      "id": "f416224b-05c6-4bc7-9e83-8cb28d8e0586",
+      "id": "438161e8-7f4f-40ef-9ca4-0e2034e7963d",
       "key": "A1M2V1R15",
       "value": "60ca00b81204f0f287700518",
       "type": "string"
     },
     {
-      "id": "16b47561-1de6-4041-ab7d-e7ab0d82954c",
+      "id": "92cad83d-0c7d-4d00-9c30-c0c5a106f208",
       "key": "A1M3",
       "value": "60ca00b81204f0f28770051f",
       "type": "string"
     },
     {
-      "id": "b464c619-af51-4fcb-8cc2-233e9a0f524e",
+      "id": "dcb76fc5-e9bd-477a-a0fd-8559c2535a16",
       "key": "A1M3V1",
       "value": "60ca00b81204f0f287700520",
       "type": "string"
     },
     {
-      "id": "a7290d00-0a68-4c52-9f23-cb787162f20d",
+      "id": "afa4a9f3-38e5-4585-94a4-f93be1fd2e86",
       "key": "A1M3FRN",
       "value": "frn:model:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f28770051f",
       "type": "string"
     },
     {
-      "id": "2a457446-f698-43eb-a239-5cb3d9bfb01e",
+      "id": "d1ec1b40-3aaa-4eaa-a10e-3c555c56866f",
       "key": "A1M3V1FRN",
       "value": "frn:modelvariant:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f28770051f/60ca00b81204f0f287700520",
       "type": "string"
     },
     {
-      "id": "8274796f-0ad2-4e8a-a822-8765c9addca9",
+      "id": "0ebf1584-4085-49a1-8128-4a017a1c46ab",
       "key": "A1M3V2",
       "value": "60ca00b81204f0f287700529",
       "type": "string"
     },
     {
-      "id": "64d2cb8e-d040-4118-8db4-7999b1894f2d",
+      "id": "c63c446b-9a55-473d-91a7-e4214138e320",
       "key": "A1M3V2FRN",
       "value": "frn:modelvariant:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f28770051f/60ca00b81204f0f287700529",
       "type": "string"
     },
     {
-      "id": "252c1aa2-1d60-4b4f-bf0a-11f2cfac9c6c",
+      "id": "03c5ee95-7184-4beb-99fe-f4b6abff9ffe",
       "key": "A1M3V1R1",
       "value": "60ca00b81204f0f28770052d",
       "type": "string"
     },
     {
-      "id": "bd11ee0e-34ba-41ea-97e3-0fd2ae69899c",
+      "id": "d398f44b-c805-4d48-b2d4-96fdb2528ee9",
       "key": "A1M4",
       "value": "60ca00b81204f0f28770052e",
       "type": "string"
     },
     {
-      "id": "56b48477-e16b-4e5e-b599-090a50130762",
+      "id": "be83b5de-676f-46ae-9dea-240655c8070e",
       "key": "A1M4FRN",
       "value": "frn:model:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f28770052e",
       "type": "string"
     },
     {
-      "id": "fec65d69-66a2-4cdb-8e02-b729780a475b",
+      "id": "81c2b9aa-d15e-4378-93c6-64fb35fd5f59",
       "key": "A1M4V1",
       "value": "60ca00b81204f0f28770052f",
       "type": "string"
     },
     {
-      "id": "bcbe6c7d-3827-4099-b8f7-3a08f1047060",
+      "id": "315f563a-5325-44d9-8082-1e03fc313cd8",
       "key": "A1M4V1FRN",
       "value": "frn:modelvariant:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f28770052e/60ca00b81204f0f28770052f",
       "type": "string"
     },
     {
-      "id": "40209d46-a621-4b36-bf29-524c0e188fe4",
+      "id": "f20e3742-be18-48a9-866a-3a9af5fc3228",
       "key": "A1M4V1R1",
       "value": "60ca00b81204f0f287700531",
       "type": "string"
     },
     {
-      "id": "ea0dbd0f-e6d9-4542-83bd-c324ea3416e4",
+      "id": "94c3d072-8465-4f40-8430-5e3e1e2d2ced",
       "key": "A1M4V1R1FRN",
       "value": "frn:record:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f28770052e/60ca00b81204f0f28770052f>60ca00b81204f0f287700531",
       "type": "string"
     },
     {
-      "id": "c8c81a1e-3ee9-4473-ad7a-aff9b268b7ae",
+      "id": "57eef65e-9f44-4780-87a2-57bf0c420918",
       "key": "A1M4V1R1F1",
       "value": "60ca00b81204f0f287700532",
       "type": "string"
     },
     {
-      "id": "6e803ce8-3b98-42a1-9873-68e484ec74d4",
+      "id": "f050de87-a281-466f-a980-75bb2534e8af",
       "key": "A1M4V1R1F1FRN",
       "value": "frn:recordfile:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f28770052e/60ca00b81204f0f28770052f>60ca00b81204f0f287700531-60ca00b81204f0f287700532",
       "type": "string"
     },
     {
-      "id": "7be89bdc-b686-44e7-9b51-4ca370f4e0c3",
+      "id": "af7e851b-fdf6-44b2-9585-45307994aaf3",
       "key": "VP1",
       "value": "60ca00b81204f0f287700534",
       "type": "string"
     },
     {
-      "id": "4b83aa78-2304-4780-9f8e-e8a5fa8b3e84",
+      "id": "bfbdde80-33f4-4c3c-a677-5ce04ac592ab",
       "key": "VP2",
       "value": "60ca00b81204f0f287700535",
       "type": "string"
     },
     {
-      "id": "d18597d0-7828-406d-81c7-44d34452950d",
+      "id": "a65be71b-6ce9-4874-a510-8aacf577104b",
       "key": "VP3",
       "value": "60ca00b81204f0f287700536",
       "type": "string"
     },
     {
-      "id": "30e5e025-ed42-4cce-9edd-b41ec928bbd7",
+      "id": "33572931-1d62-4bea-8260-57c2d49a8f49",
       "key": "Director1",
       "value": "60ca00b81204f0f287700537",
       "type": "string"
     },
     {
-      "id": "db402184-c89d-4b9f-b7d0-216a50ec072b",
+      "id": "3382acfd-fb2b-4a8c-916e-62b019023eb2",
       "key": "Director2",
       "value": "60ca00b81204f0f287700538",
       "type": "string"
     },
     {
-      "id": "d03ea862-9573-43f6-b7d0-5854a2e361f6",
+      "id": "47c17096-6bfc-4dcf-9e10-b0f2a2d573a3",
       "key": "AccountAdmin",
       "value": "60ca00b81204f0f287700539",
       "type": "string"
     },
     {
-      "id": "c79f8e90-959c-47b0-8e27-69a32c1d7584",
+      "id": "55d1ceb4-84b7-4194-b326-05ace6902cae",
       "key": "A1M1V1",
       "value": "60ca00b81204f0f287700540",
       "type": "string"
     },
     {
-      "id": "4cca4f7d-a8a9-45e0-898a-04d19775a221",
+      "id": "76f359de-6602-43ca-9039-16b86b07ab58",
       "key": "A1M1V1FRN",
       "value": "frn:modelvariant:aws:pdx:5d871ec9fee167616376f4e4:60ca00b81204f0f2877004da:60ca00b81204f0f2877004ea/60ca00b81204f0f287700540",
       "type": "string"
